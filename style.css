@@ -79,22 +79,27 @@ body {
 }
 
 .screen__history {
+  height: 47px;
+
   font-family: "Work Sans", serif;
   font-weight: 300;
   font-size: 40px;
   color: var(--text-color);
   opacity: 40%;
-
   text-align: right;
 }
 
 .screen__current {
+  height: 96px;
+
   font-family: "Work Sans", serif;
   font-weight: 300;
   font-size: 96px;
   color: var(--text-color);
 
   text-align: right;
+
+  word-wrap: break-word;
 }
 
 .keyboard {
@@ -119,6 +124,8 @@ body {
   font-weight: 400;
   font-style: normal;
   color: var(--text-color);
+
+  cursor: pointer;
 }
 
 .btn-gray {

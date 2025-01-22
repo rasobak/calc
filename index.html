@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Simple ToDo List</title>
+    <title>Simple Calculator</title>
   </head>
   <body>
     <div class="frame">
@@ -19,39 +19,40 @@
       </div>
       <div class="container">
         <div class="screen">
-          <div class="screen__history">6,291/5</div>
-          <div class="screen__current">1,258.2</div>
+          <div class="screen__history" id="history"></div>
+          <div class="screen__current" id="current"></div>
         </div>
 
         <!-- btn-gray btn-blue -->
         <div class="keyboard">
           <!-- first line -->
-          <btn class="keyboard__btn btn-gray">C</btn>
-          <btn class="keyboard__btn btn-gray">*/-</btn>
-          <btn class="keyboard__btn btn-gray">%</btn>
-          <btn class="keyboard__btn btn-blue">/</btn>
+          <btn class="keyboard__btn btn-gray" id="cancel">C</btn>
+          <btn class="keyboard__btn btn-gray" id="opposite">+/-</btn>
+          <btn class="keyboard__btn btn-gray" id="percentage">%</btn>
+          <btn class="keyboard__btn btn-blue" id="divide">/</btn>
           <!-- second line -->
-          <btn class="keyboard__btn">7</btn>
-          <btn class="keyboard__btn">8</btn>
-          <btn class="keyboard__btn">9</btn>
-          <btn class="keyboard__btn btn-blue">X</btn>
+          <btn class="keyboard__btn btn-num">7</btn>
+          <btn class="keyboard__btn btn-num">8</btn>
+          <btn class="keyboard__btn btn-num">9</btn>
+          <btn class="keyboard__btn btn-blue" id="multiply">X</btn>
           <!-- third line -->
-          <btn class="keyboard__btn">4</btn>
-          <btn class="keyboard__btn">5</btn>
-          <btn class="keyboard__btn">6</btn>
-          <btn class="keyboard__btn btn-blue">-</btn>
+          <btn class="keyboard__btn btn-num">4</btn>
+          <btn class="keyboard__btn btn-num">5</btn>
+          <btn class="keyboard__btn btn-num">6</btn>
+          <btn class="keyboard__btn btn-blue" id="substract">-</btn>
           <!-- fourth line -->
-          <btn class="keyboard__btn">1</btn>
-          <btn class="keyboard__btn">2</btn>
-          <btn class="keyboard__btn">3</btn>
-          <btn class="keyboard__btn btn-blue">+</btn>
+          <btn class="keyboard__btn btn-num">1</btn>
+          <btn class="keyboard__btn btn-num">2</btn>
+          <btn class="keyboard__btn btn-num">3</btn>
+          <btn class="keyboard__btn btn-blue" id="add">+</btn>
           <!-- firth line -->
-          <btn class="keyboard__btn">.</btn>
-          <btn class="keyboard__btn">0</btn>
+          <btn class="keyboard__btn btn-num">.</btn>
+          <btn class="keyboard__btn btn-num">0</btn>
           <btn class="keyboard__btn"><img src="img/delete-back.svg" /></btn>
-          <btn class="keyboard__btn btn-blue">=</btn>
+          <btn class="keyboard__btn btn-blue" id="equal">=</btn>
         </div>
       </div>
     </div>
+    <script src="calculator.js"></script>
   </body>
 </html>
