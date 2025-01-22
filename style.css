@@ -1,0 +1,130 @@
+:root {
+  --background: #17171c;
+
+  --high-emphasis: #4b5efc;
+  --med-emphasis: #4e505f;
+  --low-emphasis: #2e2f38;
+
+  --text-color: white;
+
+  --color1: #818181;
+  --color2: #109dff;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+  height: 812px;
+  border-radius: 39px;
+  background-color: var(--background);
+  gap: 55px;
+}
+
+.theme_switcher {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--low-emphasis);
+  width: 72px;
+  height: 32px;
+  border-radius: 16px;
+}
+
+.theme_switcher .circle {
+    height: 24px;
+    width: 24px;
+    
+    background-color: var(--med-emphasis);
+
+    border-radius: 50%;
+
+    margin: 4px;
+}
+
+.theme_switcher .moon {
+    height: 24px;
+    width: 24px;
+
+    background-image: url(/img/moon.svg);
+
+    margin: 4px 8px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 335px;
+
+  gap: 16px;
+}
+
+.screen {
+  width: 335px;
+}
+
+.screen__history {
+  font-family: "Work Sans", serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: var(--text-color);
+  opacity: 40%;
+
+  text-align: right;
+}
+
+.screen__current {
+  font-family: "Work Sans", serif;
+  font-weight: 300;
+  font-size: 96px;
+  color: var(--text-color);
+
+  text-align: right;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: 71.75px 71.75px 71.75px 71.75px;
+  gap: 16px;
+}
+
+.keyboard__btn {
+  width: 71.75px;
+  height: 72px;
+
+  background-color: var(--low-emphasis);
+
+  border-radius: 24px;
+
+  display: grid;
+  place-content: center;
+
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-color);
+}
+
+.btn-gray {
+  background-color: var(--med-emphasis);
+}
+
+.btn-blue {
+  background-color: var(--high-emphasis);
+}
